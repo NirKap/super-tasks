@@ -1,0 +1,17 @@
+{{yield}}
+
+<label class="task">
+  <label class="container">
+    <input type="checkbox">
+    <span class="checkmark" ></span>
+  
+      <text>#{{task.ID}}</text>
+        <span class="taskText" contentEditable="true">
+          {{task.text}}
+        </span> 
+        <element></element>
+        <td><input type='deleteButton' action="deleteTask({{task.ID}})">
+        <element class='newDeleteButton' action="deleteTask({{task.ID}})"></element>
+        </td>
+        </label>                                                                            
+</label>
